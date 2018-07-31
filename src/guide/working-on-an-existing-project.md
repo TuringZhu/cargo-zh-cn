@@ -1,22 +1,26 @@
-## Working on an Existing Cargo Project
+## 在已有项目上工作
 
-If you download an existing project that uses Cargo, it’s really easy
-to get going.
+> [guide/working-on-an-existing-project.md][src]
+>
+> [commit bc489e255d6a7cee5531da4992512a9e281000bb][commit]
 
-First, get the project from somewhere. In this example, we’ll use `rand`
-cloned from its repository on GitHub:
+[src]: https://github.com/rust-lang/cargo/blob/master/src/doc/src/guide/working-on-an-existing-project.md
+[commit]: https://github.com/rust-lang/cargo/commit/bc489e255d6a7cee5531da4992512a9e281000bb
+
+如果下载使用 Cargo 的现有项目，则比较容易上手。
+
+首先获取项目，在该例子中。会用从 GitHub 上克隆的 `rand`： 
 
 ```console
 $ git clone https://github.com/rust-lang-nursery/rand.git
 $ cd rand
 ```
 
-To build, use `cargo build`:
+使用 `cargo build` 编译：
 
 ```console
 $ cargo build
    Compiling rand v0.1.0 (file:///path/to/project/rand)
 ```
 
-This will fetch all of the dependencies and then build them, along with the
-project.
+这将拉取所有依赖，然后和项目一起构建。

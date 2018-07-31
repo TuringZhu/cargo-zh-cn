@@ -1,15 +1,21 @@
-## First Steps with Cargo
+## 初步使用 Cargo
 
-To start a new project with Cargo, use `cargo new`:
+> [getting-started/first-steps.md][first-steps]
+>
+> [commit 0f835654737e919d125ca17f37f520a34c84bc3e][commit]
+
+[first-steps]: https://github.com/rust-lang/cargo/blob/master/src/doc/src/getting-started/first-steps.md
+[commit]: https://github.com/rust-lang/cargo/commit/0f835654737e919d125ca17f37f520a34c84bc3e
+
+使用 `cargo new` 来新建一个项目：
 
 ```console
 $ cargo new hello_world --bin
 ```
 
-We’re passing `--bin` because we’re making a binary program: if we
-were making a library, we’d pass `--lib`.
+由于我们创建的是二进制项目，所以使用了 `--bin` 参数：如果要创建库项目，则需要 `--lib` 参数。
 
-Let’s check out what Cargo has generated for us:
+看下 Cargo 生成了什么：
 
 ```console
 $ cd hello_world
@@ -22,7 +28,7 @@ $ tree .
 1 directory, 2 files
 ```
 
-This is all we need to get started. First, let’s check out `Cargo.toml`:
+这便是刚开始所需要的。首先，来看看 `Cargo.toml` 文件的内容：
 
 ```toml
 [package]
@@ -31,10 +37,9 @@ version = "0.1.0"
 authors = ["Your Name <you@example.com>"]
 ```
 
-This is called a **manifest**, and it contains all of the metadata that Cargo
-needs to compile your project.
+这被称为 **manifest** ，其包括了 Cargo 编译项目的所有元数据。
 
-Here’s what’s in `src/main.rs`:
+这是 `src/main.rs` 的内容：
 
 ```rust
 fn main() {
@@ -42,21 +47,21 @@ fn main() {
 }
 ```
 
-Cargo generated a “hello world” for us. Let’s compile it:
+Cargo 生成了一个 “hello world”，编译：
 
 ```console
 $ cargo build
    Compiling hello_world v0.1.0 (file:///path/to/project/hello_world)
 ```
 
-And then run it:
+然后运行：
 
 ```console
 $ ./target/debug/hello_world
 Hello, world!
 ```
 
-We can also use `cargo run` to compile and then run it, all in one step:
+也可以用 `cargo run` 命令编译并运行，都在一个步骤之内：
 
 ```console
 $ cargo run
@@ -65,6 +70,6 @@ $ cargo run
 Hello, world!
 ```
 
-### Going further
+### 深入
 
-For more details on using Cargo, check out the [Cargo Guide](guide/index.html)
+关于使用 Cargo 的更多细节，查阅 [Cargo 指引](guide/index.html)

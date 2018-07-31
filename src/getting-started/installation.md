@@ -1,35 +1,37 @@
-## Installation
+## 安装
 
-### Install Rust and Cargo
+> [getting-started/installation.md][installation]
+>
+> [commit 3e4d1558ab63605d15d6d143b0b5f89ea579a8b8][commit]
 
-The easiest way to get Cargo is to install the current stable release of [Rust]
-by using `rustup`.
+[installation]: https://github.com/rust-lang/cargo/blob/master/src/doc/src/getting-started/installation.md
+[commit]: https://github.com/rust-lang/cargo/commit/3e4d1558ab63605d15d6d143b0b5f89ea579a8b8
 
-On Linux and macOS systems, this is done as follows:
+### 安装 Rust 和 Cargo
+
+获取 Cargo 的最简易方式是使用 `rustup` 来安装当前稳定版 [Rust] 。
+
+在 Linux 和 macOS 系统上，按如下方式安装：
 
 ```console
 $ curl -sSf https://static.rust-lang.org/rustup.sh | sh
 ```
 
-It will download a script, and start the installation. If everything goes well,
-you’ll see this appear:
+这样会下载一个脚本，然后开始安装。如果一切顺利，会看到这样的输出：
 
 ```console
 Rust is installed now. Great! 
 ```
 
-On Windows, download and run [rustup-init.exe]. It will start the installation
-in a console and present the above message on success.
+在 Windows 上，下载并运行 [rustup-init.exe] 。它将在一个控制台中开始安装然后成功之后显示上面的信息。
 
-After this, you can use the `rustup` command to also install `beta` or `nightly`
-channels for Rust and Cargo.
+之后，可以用 `rustup` 命令来安装 `beta` 版或 `nightly` 版的 Rust 与 Cargo 。
 
-For other installation options and information, visit the
-[install][install-rust] page of the Rust website.
+关于其他安装选项与信息，访问 Rust 网站的[安装][install-rust]页面。
 
-### Build and Install Cargo from Source
+### 源码编译并安装 Cargo
 
-Alternatively, you can [build Cargo from source][compiling-from-source].
+另外，也可以[源码编译 Cargo][compiling-from-source] 。
 
 [rust]: https://www.rust-lang.org/
 [rustup-init.exe]: https://win.rustup.rs/

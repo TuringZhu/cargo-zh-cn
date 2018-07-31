@@ -1,14 +1,20 @@
-## Cargo Guide
+## Cargo 指引
 
-This guide will give you all that you need to know about how to use Cargo to
-develop Rust projects.
+> [guide/index.md][index]
+>
+> [commit 05043ab742fb72ae6ad02cd0c7d117657b54a4db][commit]
 
-* [Why Cargo Exists](guide/why-cargo-exists.html)
-* [Creating a New Project](guide/creating-a-new-project.html)
-* [Working on an Existing Cargo Project](guide/working-on-an-existing-project.html)
-* [Dependencies](guide/dependencies.html)
-* [Project Layout](guide/project-layout.html)
-* [Cargo.toml vs Cargo.lock](guide/cargo-toml-vs-cargo-lock.html)
-* [Tests](guide/tests.html)
-* [Continuous Integration](guide/continuous-integration.html)
-* [Build Cache](guide/build-cache.html)
+[index]: https://github.com/rust-lang/cargo/blob/master/src/doc/src/guide/index.md
+[commit]: https://github.com/rust-lang/cargo/commit/05043ab742fb72ae6ad02cd0c7d117657b54a4db
+
+该指引会提供使用 Cargo 开发 Rust 项目的所有信息。
+
+* [Cargo 存在的原因](guide/why-cargo-exists.html)
+* [新建项目](guide/creating-a-new-project.html)
+* [在已有项目上工作](guide/working-on-an-existing-project.html)
+* [依赖](guide/dependencies.html)
+* [项目布局](guide/project-layout.html)
+* [Cargo.toml 与 Cargo.lock](guide/cargo-toml-vs-cargo-lock.html)
+* [测试](guide/tests.html)
+* [持续集成](guide/continuous-integration.html)
+* [构建缓存](guide/build-cache.html)
