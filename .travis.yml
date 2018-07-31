@@ -8,7 +8,7 @@ branches:
   only:
   - master
 before_script:
-  - (cargo install mdbook --vers 0.1.7 --force || true)
+  - which mdbook
 script:
   - mdbook build
 deploy:
