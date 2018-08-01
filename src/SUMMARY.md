@@ -4,7 +4,7 @@
 
 * [开始](getting-started/index.md)
     * [安装](getting-started/installation.md)
-    * [使用 Cargo 的第一步](getting-started/first-steps.md)
+    * [初次使用 Cargo](getting-started/first-steps.md)
 
 * [Cargo 指引](guide/index.md)
     * [Cargo 存在的原因](guide/why-cargo-exists.md)
@@ -17,7 +17,7 @@
     * [持续集成](guide/continuous-integration.md)
     * [构建缓存](guide/build-cache.md)
 
-* [Cargo 参考手册](reference/index.md)
+* [Cargo 参考](reference/index.md)
     * [特定依赖](reference/specifying-dependencies.md)
     * [Manifest 格式](reference/manifest.md)
     * [配置](reference/config.md)

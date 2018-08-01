@@ -1,4 +1,4 @@
-## 初步使用 Cargo
+## 初次使用 Cargo
 
 > [getting-started/first-steps.md][first-steps]
 >

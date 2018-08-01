@@ -1,8 +1,15 @@
-## Continuous Integration
+## 持续集成（CI）
+
+> [guide/continuous-integration.md][ci]
+>
+> [commit f84ec4fc5523472806669c9ae2afa763ee3837ce][commit]
+
+[ci]: https://github.com/rust-lang/cargo/blob/master/src/doc/src/guide/continuous-integration.md
+[commit]: https://github.com/rust-lang/cargo/commit/f84ec4fc5523472806669c9ae2afa763ee3837ce
 
 ### Travis CI
 
-To test your project on Travis CI, here is a sample `.travis.yml` file:
+下面是可以在 Travis CI 上测试项目的 `.travis.yml` 示例文件：
 
 ```yaml
 language: rust
@@ -15,14 +22,11 @@ matrix:
     - rust: nightly
 ```
 
-This will test all three release channels, but any breakage in nightly
-will not fail your overall build. Please see the [Travis CI Rust
-documentation](https://docs.travis-ci.com/user/languages/rust/) for more
-information.
+这会测试三个发布通道，但在 nightly 中的任何断点并不会造成整个构建的失败。请查阅 [Travis CI Rust 文档](https://docs.travis-ci.com/user/languages/rust/)以获取更多信息。
 
 ### GitLab CI
 
-To test your project on GitLab CI, here is a sample `.gitlab-ci.yml` file:
+下面是可以在 GitLab CI 上测试项目的 `.gitlab-ci.yml` 示例文件：
 
 ```yaml
 stages:
@@ -44,7 +48,4 @@ rust-nightly:
   allow_failure: true
 ```
 
-This will test on the stable channel and nightly channel, but any
-breakage in nightly will not fail your overall build. Please see the
-[GitLab CI](https://docs.gitlab.com/ce/ci/yaml/README.html) for more
-information.
+这会在 stable 通道和 nightly 通道上测试，但在 nightly 上的任何断点并不会造整个构建的失败。查阅 [GitLab CI](https://docs.gitlab.com/ce/ci/yaml/README.html) 以获取更多信息。
