@@ -1,10 +1,14 @@
-## Tests
+## 测试
 
-Cargo can run your tests with the `cargo test` command. Cargo looks for tests
-to run in two places: in each of your `src` files and any tests in `tests/`.
-Tests in your `src` files should be unit tests, and tests in `tests/` should be
-integration-style tests. As such, you’ll need to import your crates into
-the files in `tests`.
+> [guide/tests.md][test]
+>
+> [commit bc489e255d6a7cee5531da4992512a9e281000bb][commit]
+
+[test]: https://github.com/rust-lang/cargo/blob/master/src/doc/src/guide/tests.md
+[commit]: https://github.com/rust-lang/cargo/commit/bc489e255d6a7cee5531da4992512a9e281000bb
+
+Cargo 可以使用 `cargo test` 命令来运行测试。Cargo 查找测试然后在两个地方执行测试：`src` 下的每一个文件中以及 `tests/` 目录下的任何测试。
+在 `src` 文件中的测试应为单元测试，而在 `tests/` 下的测试则应为集成测试。因此，需要导入项目 crate 到 `tests` 里的文件中。
 
 Here's an example of running `cargo test` in our project, which currently has
 no tests:
@@ -20,20 +24,16 @@ running 0 tests
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
-If our project had tests, we would see more output with the correct number of
-tests.
+如果项目有测试，需要留意通过测试的数量。
 
-You can also run a specific test by passing a filter:
+也可以传递一个过滤器来运行指定的测试：
 
 ```console
 $ cargo test foo
 ```
 
-This will run any test with `foo` in its name.
+这会运行所有测试名包含 `foo` 的测试。
 
-`cargo test` runs additional checks as well. For example, it will compile any
-examples you’ve included and will also test the examples in your
-documentation. Please see the [testing guide][testing] in the Rust
-documentation for more details.
+`cargo test` 也执行额外的检查。例如，其会对包含其中任何例子进行编译，并且在文档中测试该例子。请在 Rust 文档中查阅[测试指引][testing]以获取更多详情。
 
 [testing]: https://doc.rust-lang.org/book/testing.html
