@@ -1,5 +1,7 @@
 # The Cargo Book Simplified Chinese
 
+[![Build Status](https://travis-ci.org/Turing-Chu/cargo-zh-cn.svg?branch=master)](https://travis-ci.org/Turing-Chu/cargo-zh-cn)
+
 
 ### 要求
 
